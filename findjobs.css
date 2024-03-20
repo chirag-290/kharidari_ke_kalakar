@@ -1,0 +1,128 @@
+:root {
+  --primaryColor: #4c50d3;
+  --secondaryColor: #ffce00;
+  --fontColor: #000000;
+  --whiteColor: #fff;
+  --greyColor: #e7e7e7;
+  --darkGreyColor: #5f5f5f;
+  --sofPurple: #e7e8ff;
+  --softBlue: #c3e1ff;
+  --softYellow: #fff5cc;
+  --softRed: #ffcbc8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Neue Montreal";
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  font-family: "Neue Montreal";
+  background-color: #000000;
+}
+
+
+.card {
+  position: relative;
+  border: 2px solid transparent;
+  /* Add border to ensure space for the bookmark icon */
+}
+
+/* On hover, change the border color of the card */
+.card:hover {
+  border-color: lightgray;
+}
+
+.bookmark-icon:hover {
+  transform: scale(1.2);
+}
+
+.sidebar {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: row;
+  /* Center items vertically */
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--fontColor);
+  color: var(--whiteColor);
+  position: fixed;
+  left: 0;
+  box-shadow: 2px 4px 4px gray;
+}
+
+.logo {
+  letter-spacing: 2;
+
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.menus a {
+  display: flex;
+  align-items: center;
+  color: var(--whiteColor);
+  text-decoration: none;
+}
+
+.menus ion-icon {
+  margin-right: 0.5rem;
+}
+
+.menus a:hover {
+  color: var(--secondaryColor);
+}
+
+.hero{
+  width: 100%;
+  min-height: 100vh;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#drop-area{
+  width: 500px;
+  height:300px;
+  padding: 30px;
+  background: #fff;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#img-view{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 2px dashed #bbb5ff;
+  background: #f7f8ff;
+  background-position: center;
+  background-size: cover;
+}
+
+#img-view img{
+  width: 100px;
+  margin-top: 25px;
+}
+
+#img-view span{
+  display: block;
+  font-size: 12px;
+  color: #777;
+  margin-top: 15px;
+}
